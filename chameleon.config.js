@@ -1,6 +1,6 @@
 
 // 设置静态资源的线上路径
-const publicPath = '//www.static.chameleon.com/cml';
+const publicPath = '//https://github.com/smwsk/cml-navbar/tree/master/dist';
 // 设置api请求前缀
 const apiPrefix = 'https://api.chameleon.com';
 
