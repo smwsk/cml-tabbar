@@ -1,0 +1,107 @@
+<template>
+  <view class="footer">
+    <view id="{{idx}}" class="footer-item" c-bind:tap="triggerCustomEvent" c-for="{{navbarInfoList}}" c-for-index="idx" c-for-item="item">
+      <image src="{{idx == clickIndex?item.info[1]:item.info[0]}}" class="img-item" c-bind:onload="imageLoad" c-bind:onerror="imageError"></image>
+      <text class="item-text">{{item.content}}</text>
+    </view>
+  </view>
+</template>
+
+<script>
+import cml from 'chameleon-api'
+class Footer {
+  props = {
+    navbarInfoList:{
+      type: Array,
+      default: []
+    }
+  }
+
+  data = {
+    clickIndex: 0
+  }
+
+  computed = {
+
+  }
+
+  watch  = {
+  
+  }
+
+  methods = {
+    triggerCustomEvent(e){
+      this.$cmlEmit('customevent',{
+        clickIndex:e.currentTarget.id
+      })
+      this.clickIndex =  e.currentTarget.id
+    },
+    initData(){
+      
+    },
+    imageLoad(e) {
+      console.log(e);
+    },
+    imageError(e) {}
+  }
+
+  beforeCreate() {
+  }
+
+  created() {
+  }
+
+  beforeMount() {
+  }
+
+  mounted() {
+    this.initData()
+  }
+
+  beforeDestroy() {
+  }
+
+  destroyed() {
+  }
+}
+
+export default new Footer();
+</script>
+<style lang="less" scope>
+  .footer{
+    border-top: 0.1cpx solid #CCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 750cpx;
+    height:100cpx;
+    align-items:center;
+    background-color:#FFFFFF;
+  }
+  .footer-item{
+    flex:1;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .item-text{
+      margin-top:7cpx;
+      color:gray;
+      font-size:25cpx;
+    }
+  }
+
+  .img-item{
+    width: 50cpx;
+    height:50cpx;
+    background: require('../../assets/icon/my/my_norm.png');
+  }
+  
+</style>
+<script cml-type="json">
+{
+  "base": {
+    "usingComponents": {}
+  }
+}
+</script>

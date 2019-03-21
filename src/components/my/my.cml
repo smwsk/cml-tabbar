@@ -1,0 +1,51 @@
+<template>
+  <view><text>Hello my component!</text></view>
+</template>
+
+<script>
+
+class My {
+
+  data = {
+  }
+
+  computed = {
+  }
+
+  watch  = {
+  }
+
+  methods = {
+  }
+
+  beforeCreate() {
+  }
+
+  created() {
+  }
+
+  beforeMount() {
+  }
+
+  mounted() {
+  }
+
+  beforeDestroy() {
+  }
+
+  destroyed() {
+  }
+}
+
+export default new My();
+</script>
+<style>
+
+</style>
+<script cml-type="json">
+{
+  "base": {
+    "usingComponents": {}
+  }
+}
+</script>

@@ -1,0 +1,51 @@
+<template>
+  <view><text>Hello home component!</text></view>
+</template>
+
+<script>
+
+class Home {
+
+  data = {
+  }
+
+  computed = {
+  }
+
+  watch  = {
+  }
+
+  methods = {
+  }
+
+  beforeCreate() {
+  }
+
+  created() {
+  }
+
+  beforeMount() {
+  }
+
+  mounted() {
+  }
+
+  beforeDestroy() {
+  }
+
+  destroyed() {
+  }
+}
+
+export default new Home();
+</script>
+<style>
+
+</style>
+<script cml-type="json">
+{
+  "base": {
+    "usingComponents": {}
+  }
+}
+</script>

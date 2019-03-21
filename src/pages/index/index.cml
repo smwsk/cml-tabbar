@@ -1,0 +1,80 @@
+<template>
+  <view class="container" style="{{allViewHeight}}">  
+    <view class="main" style="{{mainViewHeight}}">
+      <component is="{{currentComp}}" shrinkcomponents="home,type,my"></component>
+    </view>
+    <footer class="footer" navbar-info-list="{{navbarList}}" style="{{footerViewHeight}}" c-bind:customevent="customEventHandler"></footer>
+  </view>
+</template>
+<script>
+import cml from  'chameleon-api'
+import {navbarList} from '../../constant/index'
+class CLayout {
+  data = {
+    navbarList: navbarList,
+    viewportHeight: 0,
+    currentCompName: 'home'
+  }
+  // 计算属性
+  computed = {
+    currentComp(){
+      return this.currentCompName
+    },
+    allViewHeight() {
+      return `height:${this.viewportHeight}cpx`
+    },
+    mainViewHeight(){
+      return `height:${this.viewportHeight-100}cpx`
+    },
+    footerViewHeight(){
+      return `height:100cpx`
+    }
+  }
+  // cml模板编译完成,且渲染到dom中完成
+  mounted() {
+    this.getViewportHeight();
+  }
+
+  methods = {
+    async getViewportHeight() {
+      let res = await cml.getSystemInfo();
+      this.viewportHeight =  res.viewportHeight;
+    },
+    customEventHandler(e){
+      let index = e.detail.clickIndex;
+      this.currentCompName = this.navbarList[index].componentName
+      console.log(e)
+    }
+  }
+}
+export default new CLayout();
+</script>
+<style scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  width: 750cpx;
+}
+.main{
+  width:750cpx;
+}
+.footer{
+  width:750cpx;
+  background-color:red;
+}
+
+</style>
+<script cml-type="json">
+{
+  "base": {
+    "usingComponents":{
+      "home": "/components/home/home",
+      "type": "/components/type/type",
+      "my": "/components/my/my",
+      "footer": "/components/footer/footer"
+    }
+  },
+  "wx": {}
+}
+</script>
