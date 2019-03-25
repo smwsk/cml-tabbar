@@ -1,8 +1,0 @@
-{
-    "usingComponents": {
-        "home": "./../../components/home/home",
-        "type": "./../../components/type/type",
-        "my": "./../../components/my/my",
-        "footer": "./../../components/footer/footer"
-    }
-}

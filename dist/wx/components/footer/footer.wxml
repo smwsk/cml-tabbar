@@ -1,6 +1,0 @@
-<view class="footer  cml-base cml-view">
-  <view id="{{idx}}" class="footer-item  cml-base cml-view" bindtap="_cmlEventProxy" data-eventtap="triggerCustomEvent" wx:for="{{navbarInfoList}}" wx:for-index="idx" wx:for-item="item">
-    <image src="{{idx == clickIndex?item.info[1]:item.info[0]}}" class="img-item  cml-base cml-image" bindonload="_cmlEventProxy" data-eventonload="imageLoad" bindonerror="_cmlEventProxy" data-eventonerror="imageError"></image>
-    <text class="item-text  cml-base cml-text">{{item.content}}</text>
-  </view>
-</view>

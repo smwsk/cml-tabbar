@@ -1,1 +1,0 @@
-var __CML__GLOBAL=require("./manifest.js");__CML__GLOBAL.webpackJsonp([6],[function(n,e,o){!function(){throw new Error('Cannot find module "chameleon-runtime/index.js"')}(),function(){throw new Error('Cannot find module "chameleon-store/index.js"')}()}],[0]);
