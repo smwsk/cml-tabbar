@@ -1,4 +1,4 @@
-# cml-navbar
+# cml-tabbar
 
 * ## 在线效果 
   [H5效果在线地址](https://smwsk.github.io/cml-navbar/dist/web/cml-navbar.html)
