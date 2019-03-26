@@ -7,7 +7,7 @@
   <table  style="text-align:center;vertical-align:middle;">
   <tr>
   <th>H5效果</th>
-  <th>微信效果<th>
+  <th>微信效果</th>
   </tr>
   <tr>
     <td><img src="https://smwsk.github.io/cml-navbar/dist/screen_img/h5_screen.png" width="250" height="450" alt="H5效果"/></td>
