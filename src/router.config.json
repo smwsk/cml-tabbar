@@ -1,5 +1,5 @@
 {
-  "mode": "history",
+  "mode": "hash",
   "domain": "https://www.chameleon.com",
   "routes":[
     {
