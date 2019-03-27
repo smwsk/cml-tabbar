@@ -1,0 +1,17 @@
+[
+    {
+        "wx": {
+            "appId": "123456",
+            "path": "/pages/index/index"
+        },
+        "web": {
+            "url": "https://www.chameleon.com#/"
+        },
+        "weex": {
+            "url": "https://smwsk.github.io/cml-navbar/dist/weex/cml-navbar_268bd98038c5d840a0a0.js",
+            "query": {
+                "path": "/pages/index/index"
+            }
+        }
+    }
+]

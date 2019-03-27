@@ -1,0 +1,6 @@
+<view class="container  cml-base cml-view" style="{{allViewHeight}}">  
+  <view class="main  cml-base cml-view" style="{{mainViewHeight}}">
+    <my s-if="{{currentComp === 'my'}}" is="{{currentComp}}" shrinkcomponents="home,type,my" class=" cml-base cml-component  cml-base cml-home  cml-base cml-type  cml-base cml-my"></my><type s-if="{{currentComp === 'type'}}" is="{{currentComp}}" shrinkcomponents="home,type,my" class=" cml-base cml-component  cml-base cml-home  cml-base cml-type  cml-base cml-my"></type><home s-if="{{currentComp === 'home'}}" is="{{currentComp}}" shrinkcomponents="home,type,my" class=" cml-base cml-component  cml-base cml-home  cml-base cml-type  cml-base cml-my"></home>
+  </view>
+  <footer class="footer  cml-base cml-footer" navbar-info-list="{{navbarList}}" style="{{footerViewHeight}}" bindcustomevent="_cmlEventProxy" data-eventcustomevent="customEventHandler"></footer>
+</view>

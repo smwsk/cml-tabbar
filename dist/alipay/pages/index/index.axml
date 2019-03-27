@@ -1,0 +1,6 @@
+<view class="container  cml-base cml-view cml-0b8ae1db" style="{{allViewHeight}}">  
+  <view class="main  cml-base cml-view cml-0b8ae1db" style="{{mainViewHeight}}">
+    <my a:if="{{currentComp === 'my'}}" is="{{currentComp}}" shrinkcomponents="home,type,my" class=" cml-base cml-component cml-0b8ae1db  cml-base cml-home cml-0b8ae1db  cml-base cml-type cml-0b8ae1db  cml-base cml-my cml-0b8ae1db"></my><type a:if="{{currentComp === 'type'}}" is="{{currentComp}}" shrinkcomponents="home,type,my" class=" cml-base cml-component cml-0b8ae1db  cml-base cml-home cml-0b8ae1db  cml-base cml-type cml-0b8ae1db  cml-base cml-my cml-0b8ae1db"></type><home a:if="{{currentComp === 'home'}}" is="{{currentComp}}" shrinkcomponents="home,type,my" class=" cml-base cml-component cml-0b8ae1db  cml-base cml-home cml-0b8ae1db  cml-base cml-type cml-0b8ae1db  cml-base cml-my cml-0b8ae1db"></home>
+  </view>
+  <view class="footer  cml-base cml-view cml-0b8ae1db" style="{{footerViewHeight}}"><footer class="footer  cml-base cml-footer cml-0b8ae1db" navbar-info-list="{{navbarList}}" style="{{footerViewHeight}}" onCustomevent="_cmlEventProxy" data-eventcustomevent="customEventHandler"></footer></view>
+</view>

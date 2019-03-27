@@ -1,25 +1,33 @@
-# cml-navbar
+# cml-tabbar
 
 * ## 在线效果 
-  [H5效果在线地址](https://smwsk.github.io/cml-navbar/dist/web/cml-navbar.html)
+  [H5效果在线地址](https://smwsk.github.io/cml-tabbar/dist/web/cml-tabbar.html)
   <br>
 * ## 效果截图
-  <table  style="text-align:center;vertical-align:middle;">
+  <table>
+  <thead>
+  <td align="center">H5效果</td>
+  <td align="center">微信小程序效果</td>
+  <td align="center">支付宝小程序效果</td>
+  <td align="center">百度小程序效果</td>
+  </thead>
   <tr>
-  <th>H5效果</th>
-  <th>微信效果</th>
-  </tr>
-  <tr>
-    <td><img src="https://smwsk.github.io/cml-navbar/dist/screen_img/h5_screen.png" width="250" height="450" alt="H5效果"/></td>
-    <td>
-      <img src="https://smwsk.github.io/cml-navbar/dist/screen_img/wx_screen.png" width="250" height="450" alt="微信效果"/>
+    <td align="center"><img src="https://smwsk.github.io/cml-tabbar/dist/screen_img/h5_screen.png" width="250" height="450" alt="H5效果"/></td>
+    <td align="center">
+      <img src="https://smwsk.github.io/cml-tabbar/dist/screen_img/wx_screen.png" width="250" height="450" alt="微信小程序效果"/>
+    </td>
+    <td align="center">
+      <img src="https://smwsk.github.io/cml-tabbar/dist/screen_img/ali_screen.png" width="250" height="450" alt="支付宝小程序效果"/>
+    </td>
+    <td align="center">
+      <img src="https://smwsk.github.io/cml-tabbar/dist/screen_img/baidu_screen.png" width="250" height="450" alt="百度小程序效果"/>
     </td>
   </tr>
   </table>
 * ## 使用方法
   修改项目中constant目录的index.js文件<br>
     ```
-    export const navbarList = [
+    export const tabbarList = [
       {
         "content": "主页",
         "info" : [require("../assets/icon/home/home_normal.png"),require("../assets/icon/home/home_show.png")],
