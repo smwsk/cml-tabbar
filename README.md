@@ -12,15 +12,15 @@
   <td align="center">百度小程序效果</td>
   </thead>
   <tr>
-    <td align="center"><img src="https://smwsk.github.io/cml-tabbar/dist/screen_img/h5_screen.png" width="250" height="450" alt="H5效果"/></td>
+    <td align="center"><img src="https://smwsk.github.io/cml-tabbar/dist/screen_img/h5_screen.png" width="200" height="350" alt="H5效果"/></td>
     <td align="center">
-      <img src="https://smwsk.github.io/cml-tabbar/dist/screen_img/wx_screen.png" width="250" height="450" alt="微信小程序效果"/>
+      <img src="https://smwsk.github.io/cml-tabbar/dist/screen_img/wx_screen.png" width="200" height="350" alt="微信小程序效果"/>
     </td>
     <td align="center">
-      <img src="https://smwsk.github.io/cml-tabbar/dist/screen_img/ali_screen.png" width="250" height="450" alt="支付宝小程序效果"/>
+      <img src="https://smwsk.github.io/cml-tabbar/dist/screen_img/ali_screen.png" width="200" height="350" alt="支付宝小程序效果"/>
     </td>
     <td align="center">
-      <img src="https://smwsk.github.io/cml-tabbar/dist/screen_img/baidu_screen.png" width="250" height="450" alt="百度小程序效果"/>
+      <img src="https://smwsk.github.io/cml-tabbar/dist/screen_img/baidu_screen.png" width="200" height="350" alt="百度小程序效果"/>
     </td>
   </tr>
   </table>
